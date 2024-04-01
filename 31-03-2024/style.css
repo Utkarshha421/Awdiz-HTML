@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+span{
+    color: blueviolet;
+}
+#id{
+    color: darkgreen;
+}
+.class{
+    color: red;
+}
+p.class{
+    color: blue;
+}
+div,p{
+    color: rgb(224, 4, 206);
+}
+.stylee{
+    color: rgb(3, 3, 66);
+}
+.color{
+    background-color: yellow;
+    color: green;
+    border: 3px solid black;
+}
