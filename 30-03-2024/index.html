@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hover{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        #hover:hover{
+            border: 5px solid blue;
+            color: blue;
+            background-color: aqua;
+        }
+
+        #txt:valid{
+            background-color: green;
+        }
+        #txt:invalid{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ondblclick Event</h2>
+    <button ondblclick="alert('Welcome')">Click me!</button><br><br>
+
+    <h2>Fieldset and Legend Tag</h2>
+    <fieldset>
+        <legend>LOG IN</legend>
+        <label>Email :</label><br>
+        <input type="text"><br><br>
+        <label>Password :</label><br>
+        <input type="text"><br><br>
+        <input type="submit">
+    </fieldset>
+
+    <h2>Value Attribute</h2>
+    <input type="text" value="ABCD">
+    <input type="submit" value="Log In">
+
+    <h2>Readonly and Disabled Type</h2>
+    <input type="text" value="Readonly" readonly>
+    <input type="text" value="Disabled" disabled>
+
+    <h2>Maxlength</h2>
+    <form>
+        <label>Maxlength is 8 :</label>
+        <input type="text" placeholder="Maxlength is 8" maxlength="8">
+    </form>
+
+    <h2>Min and Max Attribute</h2>
+    <form>
+        <label>Between 3 to 8 :</label>
+        <input type="number" min="3" max="10">
+    </form>
+
+    <h2>Hover Effect</h2>
+    <div id="hover">
+        <p>Hover Efect</p>
+    </div>
+
+    <h2>Autofocus Tag</h2>
+    <form>
+       <label>First name:</label>
+       <input type="text" placeholder="Autofocus" autofocus>
+       <label>Last name:</label>
+       <input type="text">
+       <label>Email Id:</label>
+       <input type="text">
+       <label>Mobile No:</label>
+       <input type="text">
+    </form>
+
+    <h2>Novalidate Attribute</h2>
+    <form novalidate>
+        <label>Enter your email:</label>
+        <input type="email">
+         <label>Enter your pasword:</label>
+        <input type="password">
+        <input type="submit">
+    </form>
+    <br>
+    
+    <h2>pattern</h2>
+    <label for="txt">Username:</label>
+    <input id="txt" type="text" pattern="\w{3,13}" required>
+    <label for="txt">Pasword:</label>
+    <input id="txt" type="password" pattern="\d{6,6}" required>
+    <input type="submit">
+
+
+    <h2>SVG Tag and Canvas Tag</h2>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="yellow" />
+    </svg>
+    <canvas id="myCanvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
+    
+
+</body>
+</html>
