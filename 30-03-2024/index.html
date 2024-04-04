@@ -26,9 +26,11 @@
 </head>
 <body>
     <h2>Ondblclick Event</h2>
-    <button ondblclick="alert('Welcome')">Click me!</button><br><br>
+    <!-- On double click we gwt an alert message as Welcome -->
+    <button ondblclick="alert('Welcome')">Click me!</button><br><br> 
 
     <h2>Fieldset and Legend Tag</h2>
+    <!-- fieldset tag groups the data and we get border around grouped data. legend tag is used to give heading to the group. -->
     <fieldset>
         <legend>LOG IN</legend>
         <label>Email :</label><br>
@@ -39,31 +41,40 @@
     </fieldset>
 
     <h2>Value Attribute</h2>
+    <!-- when we give value to the element it goes to the backend. -->
     <input type="text" value="ABCD">
     <input type="submit" value="Log In">
 
     <h2>Readonly and Disabled Type</h2>
+    <!-- Readonly attribute specifies that input-field is read-only(user can highlight,copy it).
+    The value of readonly input-field can be sent when submitting the form.
+    Disabled attribute can't be modified(user can't copy or highlight). 
+    The value of disabled input-field can't be sent when submitting the form. -->
     <input type="text" value="Readonly" readonly>
     <input type="text" value="Disabled" disabled>
 
     <h2>Maxlength</h2>
+    <!-- The maxlength attribute specifies maximum no of characters allowed by input field. -->
     <form>
         <label>Maxlength is 8 :</label>
         <input type="text" placeholder="Maxlength is 8" maxlength="8">
     </form>
 
     <h2>Min and Max Attribute</h2>
+    <!-- Specifies minimum and maximum values for input field. -->
     <form>
         <label>Between 3 to 8 :</label>
         <input type="number" min="3" max="10">
     </form>
 
     <h2>Hover Effect</h2>
+    <!-- if we drag the cursor on text/box it will change its color/size.  -->
     <div id="hover">
         <p>Hover Efect</p>
     </div>
 
     <h2>Autofocus Tag</h2>
+    <!-- Autofocus attribute applied on whichever input field that input field will be focused automatically when page loads. -->
     <form>
        <label>First name:</label>
        <input type="text" placeholder="Autofocus" autofocus>
@@ -76,6 +87,7 @@
     </form>
 
     <h2>Novalidate Attribute</h2>
+
     <form novalidate>
         <label>Enter your email:</label>
         <input type="email">
@@ -86,12 +98,17 @@
     <br>
     
     <h2>pattern</h2>
+    <!-- if we typed the character/no out of given pattern range will show incorrect/background color changes to red. -->
+    <!-- otherwise if correct then changes to green by using VALID and INVALID tags of CSS. -->
     <label for="txt">Username:</label>
     <input id="txt" type="text" pattern="\w{3,13}" required>
     <label for="txt">Pasword:</label>
     <input id="txt" type="password" pattern="\d{6,6}" required>
     <input type="submit">
-
+    
+    <h2>Title</h2>
+    <!-- Title attribute specifies extra information on the word if we drag the cursor on that word. -->
+    <!-- we can create TOOLTIP -->
     <p>The <span title="World Health organization">WHO</span>is a specialized agency of the United Nations responsible for international public health.</p>
 
 
