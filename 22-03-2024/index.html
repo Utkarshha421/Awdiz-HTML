@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../imgvid/trees.jpg" />
+    <style>
+        table,th,tr,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+        }
+        #bbb:valid{
+            background-color: green;
+        }
+        #bbb:invalid{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <b>asdfghjkl........bold element</b>
+    <strong>asdfghjkl........strong element</strong>
+    <i>asdfghjkl</i>
+    <em>asdfghjkl</em>
+    <mark>asdfghjkl......mark element</mark>
+    <small>asdfghjkl........small element</small>
+    <p>A<sub>2</sub>B.......subscript element</p>
+    <p>A<sup>2</sup>B.......superscript element</p>
+    <p>utkarshha<del>bharat</del>shriram......deleted element</p>
+    <p>utkarshha<ins>bharat</ins>shriram......inserted element</p>
+    <p style="background-image: url('../imgvid/trees.jpg'); color: white; height: 300px; width: 300px;">Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Praesentium voluptates aperiam nam ullam adipisci ex laboriosam
+        perferendis officiis recusandae eveniet distinctio earum eos et ut minima, aut veritatis quis dolore!
+        Commodi illo facilis provident voluptate perspiciatis inventore natus aspernatur, aut distinctio libero.
+        Perspiciatis incidunt, id quia, ex nostrum quibusdam labore sunt nihil autem consectetur commodi error
+        aspernatur possimus, ipsum non.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. no</th>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ABC</td>
+                <td>85</td>
+                <td>16</td>
+                <td rowspan="4">Mumbai</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ABC</td>
+                <td>85</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ABC</td>
+                <td>85</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ABC</td>
+                <td>85</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td colspan="5">Pass</td>
+            </tr>
+        </tbody>
+    </table>
+    <dl>
+        <dt>Name</dt>
+        <dd>qwertyuiopasdfghjklzxcvbnm,</dd>
+        <dt>Name</dt>
+        <dd>qwertyuiopasdfghjklzxcvbnm,</dd>
+        <dt>Name</dt>
+        <dd>qwertyuiopasdfghjklzxcvbnm,</dd>
+        <dt>Name</dt>
+        <dd>qwertyuiopasdfghjklzxcvbnm,</dd>
+    </dl>
+    <form>
+        <label>Email :</label>
+        <input type="email" />
+        <label>Password</label>
+        <input type="password"/>
+        <label>URL</label>
+        <input type="url"/>
+        <input type="reset"/>
+        <input type="submit"/>
+    </form>
+    <input type="range" min="1" max="10" value="7"/>
+    <textarea rows="5" cols="19">hfghfhnvhm</textarea>
+    <input type="checkbox" id="hello" name="aaa"/><label for="hello">Hello</label>
+    <input type="checkbox" id="helloo" name="aaa"/><label for="helloo">Hellooooo</label>
+    <input type="radio" id="hellooo" name="aaaa"/><label for="hellooo">Hello</label>
+    <input type="radio" id="helloooo" name="aaaa"/><label for="helloooo">Hellooooo</label>
+    <input type="datetime-local"/>
+    <input type="month"/>
+    <label for="aaa">select an option :</label>
+    <select id="aaa" name="aaa" size="3">
+        <option>ABCD</option>
+        <option>EFGH</option>
+        <option>IJKL</option>
+        <option>MNOP</option>
+    </select> 
+    <input maxlength="6"/>  
+    <form>
+        <input type="number" min="3" max="10"/> 
+        <input type="submit"/>
+    </form>
+    <form>
+    <label for="bbb">email</label>
+    <input type="text" id="bbb" name="email" pattern="\w{3,13}" required/>
+    <label for="bbb">password</label>
+    <input type="password" id="bbb" name="password" pattern="\d{4,4}" required/>
+    <input type="submit"/>
+    </form>
+    <input autofocus/>
+    <input/>
+    <input/>
+    <input/>
+    <p title="World health organization">WHO</p>
+</body>
+
+</html>
