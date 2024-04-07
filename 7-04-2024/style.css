@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: white;
+}
+
+#head {
+    height: 45px;
+    width: 100%;
+    background-color: #8A7350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    height: 80px;
+    background-color: rgba(24, 24, 24);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#list {
+    padding-right: 50px;
+}
+
+#list a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+#list a:hover {
+    text-decoration-color: #8A7350;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+
+#last {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search {
+    height: 40px;
+    width: 130px;
+    border: 1px solid rgb(129, 130, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#search:hover {
+    border-color: white;
+}
+
+#nav {
+    height: 108px;
+    border: none;
+    background-color: rgb(172, 31, 41);
+    padding: 16px 16px 20px;
+    text-align: center;
+}
+
+#nav p {
+    font-size: 20px;
+}
+
+#nav h2 {
+    font-size: 16px;
+}
+
+#nav h3 {
+    font-size: 12px;
+    font-weight: 100;
+    margin: 4px;
+}
+#icon{
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+#icon i{
+    font-size: large;
+}
+#icon:hover{
+    cursor: pointer;
+    height: 40px ;
+    width: 40px;
+    border: none;
+    border-radius: 50%; 
+    padding: 10px;
+    background-color: rgb(67, 69, 71); 
+}
