@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .parent{
+            width: 100%;
+            border: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .child{
+            width: 15%;
+            height: 200px;
+            border: 2px solid red;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .position{
+            width: 100%;
+            border: none;
+            display: flex;
+        }
+        .childdiv{
+            height: 100px;
+            width: 20%;
+            border: 2px solid red;
+            background-color: blue;
+        }
+        .childdiv2{
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            background-color: yellow;
+            left: 80px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Flex-wrap</u></h2>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+    </div>
+    <h2><u>Position-Absolute</u></h2>
+    <div class="position">
+        <div class="childdiv"></div>
+        <div class="childdiv2" style="position: absolute;"></div>
+        <div class="childdiv"></div>
+    </div>
+    <h2><u>Position-Sticky</u></h2>
+    <div class="position" style=" width: 600px; height: 500px;">
+        <div class="childdiv"></div>
+        <div class="childdiv2" style="position: sticky; top: 0px; left: 0px;"></div>
+        <div class="childdiv"></div>
+        <div class="childdiv"></div>
+        <div class="childdiv"></div>
+        <div class="childdiv"></div>
+        <div class="childdiv"></div>
+    </div>
+    <h2><u>Position-Relative</u></h2>
+    <div class="position">
+        <div class="childdiv"></div>
+        <div class="childdiv2" style="position: relative;"></div>
+        <div class="childdiv"></div>
+    </div>
+    
+   
+</body>
+</html>
