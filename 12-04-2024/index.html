@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15</title>
+    <style>
+        #overflow5{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: visible;
+        }
+        #overflow1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+        #overflow2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: clip;
+        }
+        #overflow3{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        #overflow4{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+        .margin{
+            height: 200px;
+            width: 60%;
+            border: 2px solid black;
+            margin: auto;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        .media{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: pink;
+        }
+        @media screen and (max-width: 600px) {
+           .media{
+            background-color: rgb(76, 167, 76);
+            border: 8px dashed blue;
+            font-weight: bold;
+           } 
+        }
+    </style>
+</head>
+<body>
+    <h2><u>Overflow</u></h2>
+   <h2><u>Overflow :Hidden</u></h2>
+    <div id="overflow1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet debitis vero eaque voluptas dignissimos autem numquam aliquam praesentium, quod ipsa quasi illo quisquam suscipit deserunt, voluptates velit corrupti odit?
+    Veniam nulla, voluptate, eos error voluptatibus reiciendis laudantium esse laborum labore nemo quo quod dignissimos, sit quasi aliquam voluptatum. Nemo omnis minus recusandae officia adipisci fugiat! Recusandae ratione ipsam cum!</div>
+    <h2><u>Overflow :Clip</u></h2>
+    <div id="overflow2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet debitis vero eaque voluptas dignissimos autem numquam aliquam praesentium, quod ipsa quasi illo quisquam suscipit deserunt, voluptates velit corrupti odit?
+    Veniam nulla, voluptate, eos error voluptatibus reiciendis laudantium esse laborum labore nemo quo quod dignissimos, sit quasi aliquam voluptatum. Nemo omnis minus recusandae officia adipisci fugiat! Recusandae ratione ipsam cum!</div>
+    <h2><u>Overflow :Auto</u></h2>
+    <div id="overflow3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet debitis vero eaque voluptas dignissimos autem numquam aliquam praesentium, quod ipsa quasi illo quisquam suscipit deserunt, voluptates velit corrupti odit?
+    Veniam nulla, voluptate, eos error voluptatibus reiciendis laudantium esse laborum labore nemo quo quod dignissimos, sit quasi aliquam voluptatum. Nemo omnis minus recusandae officia adipisci fugiat! Recusandae ratione ipsam cum!</div>
+    <h2><u>Overflow :Scroll</u></h2>
+    <div id="overflow4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet debitis vero eaque voluptas dignissimos autem numquam aliquam praesentium, quod ipsa quasi illo quisquam suscipit deserunt, voluptates velit corrupti odit?
+    Veniam nulla, voluptate, eos error voluptatibus reiciendis laudantium esse laborum labore nemo quo quod dignissimos, sit quasi aliquam voluptatum. Nemo omnis minus recusandae officia adipisci fugiat! Recusandae ratione ipsam cum!</div>
+    <h2><u>Overflow :Visible</u></h2>
+    <div id="overflow5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet debitis vero eaque voluptas dignissimos autem numquam aliquam praesentium, quod ipsa quasi illo quisquam suscipit deserunt, voluptates velit corrupti odit?
+    Veniam nulla, voluptate, eos error voluptatibus reiciendis laudantium esse laborum labore nemo quo quod dignissimos, sit quasi aliquam voluptatum. Nemo omnis minus recusandae officia adipisci fugiat! Recusandae ratione ipsam cum!</div>
+    
+    <h2 style="text-align: center;"><u>Margin :Auto</u></h2>
+    <div class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem officiis optio molestias, eos laboriosam molestiae? Sed, ipsam eveniet iusto accusantium cupiditate similique suscipit reprehenderit ex. Iste consequatur aut libero ratione?</div>
+
+    <h2><u>Center an image</u></h2>
+    <img src="../imgvid/trees.jpg"/>
+
+    <h2><u>Media queries</u></h2>
+    <div class="media">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, exercitationem, fuga, nihil pariatur dignissimos ipsa suscipit tempore accusamus sint est incidunt unde molestias? Rem sit vel, aperiam error laudantium nemo.</div>
+
+</body>
+</html>
